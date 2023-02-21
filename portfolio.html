@@ -284,6 +284,7 @@
         </div>
       </section>
     </main>
+     <!-- footer  -->
     <footer class="footer">
       <div class="box-footer container">
         <div class="footer-logo-cont">
@@ -295,7 +296,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div class="footer-social-cont">
+        <div class="footer-box-contact">
           <h2 class="footer-social-title">Social media</h2>
           <ul class="footer-contacts-list list">
             <li class="footer-contacts-item">
@@ -352,7 +353,45 @@
             </li>
           </ul>
         </div>
+
+        <!-- subscribe-footer -->
+
+        <div class="subscribe-wraper">
+          <p class="subscribe-badge">Subscribe</p>
+          <form
+            class="subscribe-form"
+            name="subscribe_form"
+            autocomplete="off"
+            novalidate
+          >
+            <label class="subscribe-field">
+              <input
+                class="subscribe-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <div class="subscribe-box-bottom">
+              <button class="subscribe-btn" type="submit">Subscribe</button>
+              <svg class="send-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </div>
+          </form>
+        </div>
       </div>
+    </footer>
+
+    <!-- Modal Window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="buttom" data-modal-close>
+          <svg class="modal-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
     </footer>
   </body>
 </html>
