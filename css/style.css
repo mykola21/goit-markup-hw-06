@@ -671,6 +671,9 @@ button {
   align-items: center;
   justify-content: center;
 }
+.subscribe-field {
+  display: block;
+}
 
 .subscribe-input {
   display: block;

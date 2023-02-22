@@ -595,27 +595,23 @@
 
         <div class="subscribe-wraper">
           <p class="subscribe-badge">Subscribe</p>
-          <form
-            class="subscribe-form"
-            name="subscribe_form"
-            autocomplete="off"
-            novalidate
-          >
+          <form class="subscribe-form" name="subscribe_form" autocomplete="off">
+            <label class="subscribe-field" for="subscribe-input-mail"></label>
             <div class="subscribe-box-bottom">
-              <label class="subscribe-field">
-                <input
-                  class="subscribe-input"
-                  type="e-mail"
-                  name="email"
-                  placeholder="E-mail"
-                />
-              </label>
+              <input
+                class="subscribe-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                required
+                id="subscribe-input-mail"
+                minlength="5"
+                maxlength="30"
+              />
               <svg class="send-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
-              <button class="subscribe-btn" id="subs-submit" type="submit">
-                Subscribe
-              </button>
+              <button class="subscribe-btn" type="submit">Subscribe</button>
             </div>
           </form>
         </div>
@@ -623,6 +619,7 @@
     </footer>
 
     <!-- Modal Window -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="buttom" data-modal-close>
@@ -650,7 +647,9 @@
               <use href="./images/icons.svg#icon-person-icon"></use>
             </svg>
           </div>
+
           <!-- Phone field -->
+
           <label class="modal-form-label" for="user_phone">Phone</label>
           <div class="modal-form-group">
             <input
@@ -658,15 +657,17 @@
               name="modal_user_phone"
               type="tel"
               id="user_phone"
-              reguired
-              minlength="13"
+              required
+              minlength="3"
               maxlength="13"
             />
             <svg class="modal-form-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-phone-icon"></use>
             </svg>
           </div>
+
           <!--Mail field -->
+
           <label class="modal-form-label" for="user_mail">Email</label>
           <div class="modal-form-group">
             <input
@@ -674,12 +675,15 @@
               name="modal_user_mail"
               type="email"
               id="user_mail"
+              required
             />
             <svg class="modal-form-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-email_icon"></use>
             </svg>
           </div>
+
           <!-- Comment field -->
+
           <label class="modal-form-label" for="user_comment">Comment</label>
           <textarea
             class="modal-form-comment"
